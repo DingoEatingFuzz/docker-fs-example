@@ -1,5 +1,5 @@
 FROM alpine:3.10
 
-COPY . local/
+COPY . .
 
-CMD [ "sh", "local/streaming.sh"]
+CMD [ "sh", "./streaming.sh"]
