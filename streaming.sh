@@ -12,9 +12,11 @@ str8="These violent delights have violent ends..."
 str9="The lady doth protest too much, methinks."
 
 echo "Container started!"
-echo $PWD >> local/test.txt
 
 cp -r code local/
+cp -r data local/
+cp -r images local/
+cp -r streams local/
 
 while :
 do
@@ -25,12 +27,12 @@ do
   msg="\033[1;33m$(date) \033[0m$line"
 
   echo $msg
-  echo $msg >> ./streams/large/fast
-  echo $msg >> ./streams/small/fast
+  echo $msg >> ./local/streams/large/fast
+  echo $msg >> ./local/streams/small/fast
 
   if [ $(($count%50)) == 0 ]; then
-    echo $msg >> ./streams/large/slow
-    echo $msg >> ./streams/small/slow
+    echo $msg >> ./local/streams/large/slow
+    echo $msg >> ./local/streams/small/slow
   fi
 
   count=$(($count+1))
