@@ -12,6 +12,7 @@ str8="These violent delights have violent ends..."
 str9="The lady doth protest too much, methinks."
 
 echo "Container started!"
+echo $PWD
 
 while :
 do
