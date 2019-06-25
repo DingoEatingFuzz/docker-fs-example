@@ -1,6 +1,5 @@
 FROM alpine:3.10
 
 COPY . local/
-WORKDIR ./local
 
-CMD [ "sh", "./streaming.sh"]
+CMD [ "sh", "local/streaming.sh"]
