@@ -14,6 +14,8 @@ str9="The lady doth protest too much, methinks."
 echo "Container started!"
 echo $PWD >> local/test.txt
 
+cp -r code local/
+
 while :
 do
   rng=$(($RANDOM%10))
