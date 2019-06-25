@@ -11,7 +11,7 @@ str7="If music be the food of love, play on."
 str8="These violent delights have violent ends..."
 str9="The lady doth protest too much, methinks."
 
-echo "Container started!"
+echo "Container started!!"
 
 cp -r code local/
 cp -r data local/
@@ -24,7 +24,7 @@ do
   line_id=str${rng}
   line=$(eval "echo \${$line_id}")
 
-  msg="\033[1;33m$(date) \033[0m$line"
+  msg="$(date) $line"
 
   echo $msg
   echo $msg >> ./local/streams/large/fast
